@@ -9,10 +9,21 @@ body {
     line-height: 1.4;
     /* font-weight: 300; */
     font-family: 'Josefin Sans', sans-serif;
+    color: whitesmoke;
+}
+
+.wrapper {
+    background: #c31432;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #240b36, #c31432);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #240b36, #c31432);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
 }
 
 .name_logo {
-    font-size: medium;
+    font-size: larger;
     font-style: inherit;
     font-weight: 600;
     font-family: 'Josefin Sans', sans-serif;
@@ -20,13 +31,10 @@ body {
 }
 
 nav {
-    box-shadow: 5px 5px 10px red;
-    box-shadow: inset;
-    position: sticky;
-    top: 0;
+    padding-top: 20px;
     margin-bottom: 32px;
-    background: yellow;
     padding: 0 px 9px;
+    color: whitesmoke;
 }
 
 .navigation {
@@ -37,7 +45,7 @@ nav {
 
 .container {
     /* color: yellow; */
-    background-color: yellow (221, 243, 21);
+    /* background-color: yellow (221, 243, 21); */
     max-width: 1200px;
     max-height: 100%;
     margin: 0 auto;
@@ -62,23 +70,60 @@ nav {
 }
 
 .hero_image {
-    margin: 50px;
+    padding: 50px 56px;
+}
+
+.hero_image img{
+    width: 400px;
+    height: 400px;
 }
 
 .hero_content {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding-top: 25px;
 }
 
 .tag {
-    background-color: green;
-    padding: 5px 10px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
-    color: white;
+    color: whitesmoke;
     align-self: flex-start;
 }
-.hero_content h1{
-    font-size: 72px;
+
+.text-big {
+    font-size: 52px;
+}
+
+.seperator {
+    max-width: 100%;
+    width: 60px;
+    border-top-width: 3px;
+    border-top-style: solid;
+    border-top-color: #48ee32;
+}
+
+.explore_btn {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: .5s;
+    background-size: 200% auto;
+    color: #fff;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    background-image: linear-gradient(to right, #314755 0%, #26a0da 51%, #314755 100%);
+}
+
+.explore_btn:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.width-50 {
+    width: 50%;
 }
